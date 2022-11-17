@@ -3,27 +3,17 @@
     {
       "id": 1,
       "nome": "X-Burguer",
-      "Preco": 10.54
+      "preco": 10.54
     },
     {
-      "id": 2,
-      "nome": "X-Burguer2",
-      "Preco": 10.51
+      "nome": "X-Salada",
+      "preco": 10,
+      "id": 2
     },
     {
-      "id": 3,
-      "nome": "X-Burguer3",
-      "Preco": 10.52
-    },
-    {
-      "id": 4,
-      "nome": "X-Burguer4",
-      "Preco": 10.55
-    },
-    {
-      "id": 5,
-      "nome": "X-Burguer5",
-      "Preco": 10.56
+      "nome": "X-Bacon",
+      "preco": 15,
+      "id": 3
     }
   ]
 }

@@ -1,18 +1,19 @@
 <h3>Cardápio</h3>
-<form action="">
-  <input type="text" placeholder="Produto" />
-  <input type="number" />
-  <button type="submit">Incluir</button>
+<form [formGroup]="form" (ngSubmit)="add()">
+  <input type="text" formControlName="nome" placeholder="Produto" />
+  <input type="number" formControlName="preco" />
+  <button type="submit" [disabled]="form.invalid">Incluir</button>
 </form>
 <table>
   <tr>
     <th>Id</th>
     <th>Nome</th>
-    <th>Microrregiao</th>
+    <th>Preco</th>
   </tr>
   <tr *ngFor="let item of cardapio">
-    <td>Id</td>
-    <td>Nome</td>
-    <td>Microrregiao</td>
+    <td>{{ item.id }}</td>
+    <td>{{ item.nome }}</td>
+    <td>{{ item.preco }}</td>
+    <td><button (click)="delete(item)">Excluir</button></td>
   </tr>
 </table>
